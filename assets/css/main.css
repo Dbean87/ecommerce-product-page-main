@@ -1,17 +1,55 @@
-/* Error: Undefined variable.
- *    ,
- * 29 |     border-bottom: $textGrey solid 1px;
- *    |                    ^^^^^^^^^
- *    '
- *   assets/scss/main.scss 29:20  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 29 \2502      border-bottom: $textGrey solid 1px;\a    \2502                     ^^^^^^^^^\a    \2575 \a   assets/scss/main.scss 29:20  root stylesheet";
+/* kumbh-sans-regular - latin */
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/kumbh-sans-v6-latin-regular.woff2") format("woff2"), url("../fonts/kumbh-sans-v6-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* kumbh-sans-700 - latin */
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/assets/fonts/kumbh-sans-v6-latin-700.woff2") format("woff2"), url("/assets/fonts/kumbh-sans-v6-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: #68707d solid 1px;
+  padding-bottom: 35px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+header .logo {
+  margin-right: 20px;
+}
+header .nav {
+  display: flex;
+  gap: 5%;
+}
+header .nav a {
+  color: #68707d;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: inherit;
+}
+header .icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .avatar img {
+  width: 50px;
+}
+
+main {
+  height: 200vh;
+  background-color: #333;
+  background-color: pink;
+}
+
+/*# sourceMappingURL=main.css.map */
