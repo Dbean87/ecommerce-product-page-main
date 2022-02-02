@@ -1,8 +1,40 @@
 // Global Variables
 
-$textGrey: hsl(220, 14%, 75%);
+// Primary
 
+$primaryOrange: hsl(26, 100%, 55%);
+$paleOrange: hsl(22, 100%, 94%);
 
+// Neutral
+$vDarkBlue: hsl(220, 13%, 13%);
+$darkGreyBlue: hsl(219, 9%, 45%);
+$greyBlue: hsl(220, 14%, 75%);
+$lightGreyBlue: hsl(223, 64%, 98%);
+$white: hsl(255,0%,100%);
+$black: hsl(0,0%, 0%);
+
+//Fonts
+
+/* kumbh-sans-regular - latin */
+@font-face {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/kumbh-sans-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/kumbh-sans-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* kumbh-sans-700 - latin */
+  @font-face {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/kumbh-sans-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/kumbh-sans-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+    $fontPrimary: 'Kumbh Sans', sans-serif;
 
 
 
@@ -10,8 +42,10 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items:center;
-    border-bottom: $textGrey solid 1px;
+    border-bottom: $darkGreyBlue solid 1px;
     padding-bottom: 35px;
+    font-family: $fontPrimary;
+    font-weight: 400;
 
     .logo{
         margin-right: 20px;
@@ -22,8 +56,10 @@ header{
         gap: 5%;
 
         a{
-            color: $textGrey;
+            color: $darkGreyBlue;
             text-decoration: none;
+            font-family: inherit;
+            font-weight: inherit;
         }
     }
 
@@ -43,8 +79,8 @@ header{
 //====== Main =========//
 
 
-.main {
-
+main {
+    height: 200vh;
     background-color: #333;
 
     background-color: green; 
