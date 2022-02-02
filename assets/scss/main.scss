@@ -1,0 +1,40 @@
+// Global Variables
+
+$textGrey: hsl(220, 14%, 75%);
+
+
+
+
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    border-bottom: $textGrey solid 1px;
+    padding-bottom: 35px;
+
+    .logo{
+        margin-right: 20px;
+    }
+
+    .nav{
+        display: flex;
+        gap: 5%;
+
+        a{
+            color: $textGrey;
+            text-decoration: none;
+        }
+    }
+
+    .icons{
+        margin-left:auto;
+        display:flex;
+        align-items:center;
+        gap: 40px;
+    }
+
+    .avatar img{
+        width:50px;
+    }
+}
