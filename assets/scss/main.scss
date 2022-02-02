@@ -1,6 +1,22 @@
 // Global Variables
 
-$textGrey: hsl(220, 14%, 75%);
+// Primary
+
+$primaryOrange: hsl(26, 100%, 55%);
+$paleOrange: hsl(22, 100%, 94%);
+
+// Neutral
+$vDarkBlue: hsl(220, 13%, 13%);
+$darkGreyBlue: hsl(219, 9%, 45%);
+$greyBlue: hsl(220, 14%, 75%);
+$lightGreyBlue: hsl(223, 64%, 98%);
+$white: hsl(255,0%,100%);
+$black: hsl(0,0%, 0%);
+
+//
+
+
+
 
 
 
@@ -43,13 +59,9 @@ header{
 //====== Main =========//
 
 
-.main {
-
+main {
+    height: 200vh;
     background-color: #333;
-<<<<<<< HEAD
-    background-color: yellow; 
-=======
     background-color: pink; 
->>>>>>> refs/remotes/origin/main
     
 }
