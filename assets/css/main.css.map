@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"sourceRoot":"","sources":["../scss/main.scss"],"names":[],"mappings":"AAiBA;AACA;EACI;EACA;EACA;EACA;AAEsE;;AAExE;AACA;EACE;EACA;EACA;EACA;AAEuE;;AAO3E;EACI;EACA;EACA;EACA;EACA;EACA,aAVc;EAWd;;AAEA;EACI;;AAGJ;EACI;EACA;;AAEA;EACI,OAjDG;EAkDH;EACA;EACA;;AAIR;EACI;EACA;EACA;EACA;;AAGJ;EACI;;;AAQR;EACI;EACA;EACA","file":"main.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["../scss/main.scss"],"names":[],"mappings":"AAQA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;EACA;;AAEA;EACI,OAtBD;EAuBC;;AAIR;EACI;EACA;EACA;EACA;;AAGJ;EACI;;;AAQR;EAEI;EAEA;EACA","file":"main.css"}
->>>>>>> staging
+{"version":3,"sourceRoot":"","sources":["../scss/main.scss"],"names":[],"mappings":"AAiBA;AACA;EACI;EACA;EACA;EACA;AAEsE;;AAExE;AACA;EACE;EACA;EACA;EACA;AAEuE;;AAO3E;EACI;EACA;EACA;EACA;EACA;EACA,aAVc;EAWd;;AAEA;EACI;;AAGJ;EACI;EACA;;AAEA;EACI,OAjDG;EAkDH;EACA;EACA;;AAIR;EACI;EACA;EACA;EACA;;AAGJ;EACI;;;AAQR;EACI;EACA;EAEA;EACA","file":"main.css"}
