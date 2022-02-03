@@ -5,6 +5,8 @@
 $primaryOrange: hsl(26, 100%, 55%);
 $paleOrange: hsl(22, 100%, 94%);
 
+
+
 // Neutral
 $vDarkBlue: hsl(220, 13%, 13%);
 $darkGreyBlue: hsl(219, 9%, 45%);
@@ -37,29 +39,55 @@ $black: hsl(0,0%, 0%);
     $fontPrimary: 'Kumbh Sans', sans-serif;
 
 
+//resets
+
+*, *::before, *::after {
+     box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+
+.page-wrapper{
+    max-width: 1440px;
+    margin:auto;
+}
+
+
 
 header{
     display: flex;
     justify-content: flex-start;
     align-items:center;
-    border-bottom: $darkGreyBlue solid 1px;
-    padding-bottom: 35px;
+    color: $darkGreyBlue;
+    border-bottom: #ebebee solid 2px;
+
+    padding: 3% 0;
+    margin: auto 12.5%;
     font-family: $fontPrimary;
     font-weight: 400;
 
     .logo{
-        margin-right: 20px;
+        margin-right: 3%;
+
+        img{
+            height: 22px
+        }
     }
 
     .nav{
         display: flex;
-        gap: 5%;
+        gap: 12.5%;
 
         a{
-            color: $darkGreyBlue;
+            color: inherit;
             text-decoration: none;
             font-family: inherit;
             font-weight: inherit;
+        }
+        a:hover{
+            color: $vDarkBlue;
         }
     }
 
@@ -72,6 +100,19 @@ header{
 
     .avatar img{
         width:50px;
+        height:50px;
+        border-radius:50%;
+
+        border:2px solid $white;
+        transition:border 0.2s ease-in-out,
+                transform 0.3s ease-in-out ;
+
+    }
+    .avatar img:hover{
+        //outline:2px solid $primaryOrange;
+        border:2px solid $primaryOrange;
+        transform: scale(1.2);
+        
     }
 }
 
@@ -81,9 +122,5 @@ header{
 
 main {
     height: 200vh;
-    background-color: #333;
-
-    background-color: green; 
-    color: yellow;
     
 }
