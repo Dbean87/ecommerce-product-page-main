@@ -14,15 +14,24 @@
   src: local(""), url("/assets/fonts/kumbh-sans-v6-latin-700.woff2") format("woff2"), url("/assets/fonts/kumbh-sans-v6-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  position: relative;
+  min-width: 320px;
 }
 
-button, a {
+body.no-scroll {
+  overflow: hidden;
+}
+
+button,
+a {
   outline: none;
   border: none;
   background: unset;
@@ -56,7 +65,8 @@ header {
   }
   header .mobile-overlay {
     background-color: black;
-    opacity: 0.7;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -64,10 +74,16 @@ header {
     right: 0;
     z-index: 9;
   }
+  header .mobile-overlay.show {
+    opacity: 0.6;
+    visibility: visible;
+    transition: visibility 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
 }
 header .hamburger {
   margin-right: 20px;
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 1040px) {
   header .hamburger {
@@ -96,19 +112,26 @@ header .nav button {
     gap: 30px;
     background-color: white;
     color: black;
-    outline: solid 1px red;
     width: 70%;
     height: 100%;
     padding-left: 30px;
     padding-top: 100px;
     z-index: 10;
     font-weight: bold;
+    left: -101%;
+    transition: transform 500ms ease-in-out;
+    outline: none;
+    border: none;
+  }
+  header .nav.show {
+    transform: translateX(144%);
   }
   header .nav button {
     display: block;
     position: absolute;
     top: 20px;
     left: 30px;
+    cursor: pointer;
   }
   header .nav a::after {
     display: none;
