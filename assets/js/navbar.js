@@ -30,7 +30,7 @@ hamburger.onclick = () => {
 window.addEventListener("resize", function () {
   if (
     document.querySelector(".nav").classList.contains("show") &&
-    this.window.innerWidth > 1039
+    this.window.innerWidth > 899
   ) {
     document.querySelector(".nav").classList.remove("show");
     document.querySelector(".mobile-overlay").classList.remove("show");
